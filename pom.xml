@@ -2,13 +2,13 @@
 <project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.okta.examples</groupId>
-    <artifactId>okta-graal-example-jdk</artifactId>
+    <groupId>com.examples.graalvm</groupId>
+    <artifactId>graalvm-java-example</artifactId>
     <version>1.0-SNAPSHOT</version>
 
     <properties>
-        <maven.compiler.source>11</maven.compiler.source>
-        <maven.compiler.target>11</maven.compiler.target>
+        <maven.compiler.source>17</maven.compiler.source>
+        <maven.compiler.target>17</maven.compiler.target>
     </properties>
 
     <build>
@@ -16,10 +16,10 @@
             <plugin>
                 <groupId>org.graalvm.nativeimage</groupId>
                 <artifactId>native-image-maven-plugin</artifactId>
-                <version>19.3.0</version>
+                <version>21.2.0</version>
                 <configuration>
-                    <mainClass>com.okta.examples.jdk.JdkDiceApplication</mainClass>
-                    <imageName>roll</imageName>
+                    <mainClass>com.examples.graalvm.DockerCli</mainClass>
+                    <imageName>docker</imageName>
                 </configuration>
                 <executions>
                     <execution>
