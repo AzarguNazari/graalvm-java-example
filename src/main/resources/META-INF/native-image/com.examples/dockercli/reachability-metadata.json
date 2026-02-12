@@ -1,0 +1,11 @@
+{
+  "reflection": [
+    {
+      "condition": { "typeReached": "com.examples.graalvm.DockerCli" },
+      "type": "com.examples.graalvm.DockerCli",
+      "allDeclaredFields": true,
+      "allDeclaredMethods": true,
+      "allDeclaredConstructors": true
+    }
+  ]
+}
